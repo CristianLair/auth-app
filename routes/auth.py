@@ -23,6 +23,7 @@ def _public_user(user: dict) -> dict:
         "id": str(user["_id"]),
         "name": user.get("name"),
         "email": user["email"],
+        "role": user.get("role"),
     }
 
 
